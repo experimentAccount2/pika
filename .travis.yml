@@ -1,8 +1,23 @@
 language: python
 python:
-    - 2.6
     - 2.7
+
+before_install:
+       # add for profile
+  - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
+
 install:
     - if [[ $TRAVIS_PYTHON_VERSION == '2.6' ]]; then pip install --use-mirrors unittest2; fi
     - pip install --use-mirrors tornado twisted pyyaml 
-script: nosetests
+    # add for profile
+  - sudo apt-get install -qq g++-4.8
+  - export CXX="g++-4.8"
+  - pip install nose-cprof
+  - pip install properform
+
+script: 
+  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_69373d8b6e_0
+  - python -m properform Push 47.88.50.110:15554 asdf_pika_69373d8b6e_0 ./profile_pika_69373d8b6e_0
+
+ #2017-08-13 13:15:38 modified at 0
