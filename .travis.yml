@@ -35,12 +35,12 @@ before_script:
   - sudo rabbitmqctl status
 
 script:
-  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_01adac6449_3
-  - python -m properform Push 47.88.50.110:15554 asdf_pika_01adac6449_3 ./profile_pika_01adac6449_3
+  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_01adac6449_4
+  - python -m properform Push 47.88.50.110:15554 asdf_pika_01adac6449_4 ./profile_pika_01adac6449_4
 
 
 
 after_success:
   - codecov
 
- #2017-08-13 12:06:28 modified at 0 #2017-08-13 12:06:32 modified at 1 #2017-08-13 12:06:36 modified at 2 #2017-08-13 12:06:40 modified at 3
+ #2017-08-13 12:06:28 modified at 0 #2017-08-13 12:06:32 modified at 1 #2017-08-13 12:06:36 modified at 2 #2017-08-13 12:06:40 modified at 3 #2017-08-13 12:06:45 modified at 4
