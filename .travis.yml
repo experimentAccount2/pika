@@ -24,9 +24,9 @@ install:
 services:
   - rabbitmq
 script: 
-  - nosetests -c nose.cfg --with-coverage --cover-package=pika --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_704f5be269_0
-  - python -m properform Push 47.88.50.110:15554 asdf_pika_704f5be269_0 ./profile_pika_704f5be269_0
+  - nosetests -c nose.cfg --with-coverage --cover-package=pika --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_704f5be269_1
+  - python -m properform Push 47.88.50.110:15554 asdf_pika_704f5be269_1 ./profile_pika_704f5be269_1
 
 after_success:
   - coveralls
- #2017-08-13 13:03:46 modified at 0
+ #2017-08-13 13:03:46 modified at 0 #2017-08-13 13:03:50 modified at 1
