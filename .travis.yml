@@ -101,10 +101,10 @@ services:
 
 script:
   - sudo rabbitmqctl status
-  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_f3e129d263_0
-  - python -m properform Push 47.88.50.110:15554 asdf_pika_f3e129d263_0 ./profile_pika_f3e129d263_0
+  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_f3e129d263_1
+  - python -m properform Push 47.88.50.110:15554 asdf_pika_f3e129d263_1 ./profile_pika_f3e129d263_1
 
 after_success:
   - codecov
 
- #2017-08-13 12:15:59 modified at 0
+ #2017-08-13 12:15:59 modified at 0 #2017-08-13 12:16:04 modified at 1
