@@ -17,7 +17,7 @@ install:
   - pip install properform
 
 script: 
-  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_180e7c4cfa_0
-  - python -m properform Push 47.88.50.110:15554 asdf_pika_180e7c4cfa_0 ./profile_pika_180e7c4cfa_0
+  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_180e7c4cfa_1
+  - python -m properform Push 47.88.50.110:15554 asdf_pika_180e7c4cfa_1 ./profile_pika_180e7c4cfa_1
 
- #2017-08-13 13:12:17 modified at 0
+ #2017-08-13 13:12:17 modified at 0 #2017-08-13 13:12:21 modified at 1
