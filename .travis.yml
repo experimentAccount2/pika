@@ -26,9 +26,9 @@ install:
 services:
   - rabbitmq
 script: 
-  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_331639282f_3
-  - python -m properform Push 47.88.50.110:15554 asdf_pika_331639282f_3 ./profile_pika_331639282f_3
+  - nosetests --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_331639282f_4
+  - python -m properform Push 47.88.50.110:15554 asdf_pika_331639282f_4 ./profile_pika_331639282f_4
 
 after_success:
   - codecov
- #2017-08-13 12:26:01 modified at 0 #2017-08-13 12:26:05 modified at 1 #2017-08-13 12:26:09 modified at 2 #2017-08-13 12:26:14 modified at 3
+ #2017-08-13 12:26:01 modified at 0 #2017-08-13 12:26:05 modified at 1 #2017-08-13 12:26:09 modified at 2 #2017-08-13 12:26:14 modified at 3 #2017-08-13 12:26:18 modified at 4
