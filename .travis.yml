@@ -23,7 +23,7 @@ install:
 services:
   - rabbitmq
 script: 
-  - nosetests -c nose.cfg --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_611ad0eb3c_0
-  - python -m properform Push 47.88.50.110:15554 asdf_pika_611ad0eb3c_0 ./profile_pika_611ad0eb3c_0
+  - nosetests -c nose.cfg --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_pika_611ad0eb3c_1
+  - python -m properform Push 47.88.50.110:15554 asdf_pika_611ad0eb3c_1 ./profile_pika_611ad0eb3c_1
 
- #2017-08-13 13:05:37 modified at 0
+ #2017-08-13 13:05:37 modified at 0 #2017-08-13 13:05:41 modified at 1
